@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicker with Counter</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #counter {
+            font-size: 2em;
+            margin-right: 10px;
+        }
+        #clickButton {
+            padding: 10px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <span id="counter">0</span>
+        <button id="clickButton" onclick="incrementCounter()">Click me!</button>
+    </div>
+
+    <script>
+        // JavaScript code to handle the click event and update the counter
+        var counter = 0;
+
+        function incrementCounter() {
+            counter++;
+            document.getElementById('counter').innerText = counter;
+        }
+    </script>
+
+</body>
+</html>
